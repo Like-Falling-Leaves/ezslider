@@ -47,15 +47,16 @@
 
 <pre><code>&lt;script src="//code.jquery.com/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
 &lt;script src="//hammerjs.github.io/dist/hammer.min.js"&gt;&lt;/script&gt;
-&lt;script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.css"&gt;&lt;/script&gt;
-&lt;script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.bullets.js"&gt;&lt;/script&gt;
-&lt;script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.js"&gt;&lt;/script&gt;
+&lt;script src="//like-falling-leaves.github.io/ezStyles/ezStyles.js"&gt;
+&lt;script src="//like-falling-leaves.github.io/ezslider/ezslider.bullets.js"&gt;
+&lt;script src="//like-falling-leaves.github.io/ezslider/ezslider.js"&gt;
+&lt;link href="//like-falling-leaves.github.io/ezslider/ezslider.css"&gt;
 </code></pre>
 
 <p>Or, you can use the version which rolls up <a href="http://hammerjs.github.io/">HammerJS</a>:</p>
 
 <pre><code>&lt;script src="//code.jquery.com/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
-&lt;script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.all.js"&gt;&lt;/script&gt;
+&lt;script src="//like-falling-leaves.github.io/ezslider/ezslider.all.js"&gt;
 </code></pre>
 
 <p> <em>Note #1<em> The first version (<em>ezslider.js</em>) above does not include the <em>bullets</em> plugin -- that should be included manually.  The second one (<em>ezslider.all.js</em>) rolls in the <em>bullet</em> plugin as well. </em></em></p>
@@ -116,15 +117,12 @@
    });
 </code></pre>
 
-<p><em>Example #3</em>: Slider with bullets and default styles</p>
+<p><em>Example #4</em>: Slider with bullets and default styles</p>
 
 <pre lang="javascriopt"><code>   $(function () {
-       $('.slider).slider({bullets: {}});
+       $('.slider).slider({});
    });
 </code></pre>
-
-<iframe width="90%" height="100px" src="example1.html" />
-
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/Like-Falling-Leaves">Like-Falling-Leaves</a></p>
