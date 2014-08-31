@@ -87,7 +87,7 @@ module.exports = {
 };
 
 function addDefaultStyles() {
-  return styles.create({
+  return ezStyles.create({
     id: 'slider-styles',
     styles: [
       ['.slider', 'overflow: hidden; white-space: nowrap; position: relative;'],
