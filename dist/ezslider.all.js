@@ -122,25 +122,10 @@ function addPlugin() {
   }
 }
 
-
-function debounce(func, wait, immediate) {
-  var timeout;
-  return function() {
-    var context = this, args = arguments;
-    clearTimeout(timeout);
-    timeout = setTimeout(function() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    }, wait);
-    if (immediate && !timeout) func.apply(context, args);
-  };
-}
-
 function initSlider(viewport, options) {
   options = options || [];
   if (!options.noStyles) addDefaultStyles();
   var hammertime = new Hammer(viewport[0], {});
-  var fixup = debounce(fixupIfNeeded, 100);
   var itemSel = options.itemSelector || '.item';
 
   hammertime.on('swipe', swipe)
@@ -166,7 +151,6 @@ function initSlider(viewport, options) {
     first.css({marginLeft: margin + ev.deltaX - deltaX});
     viewport.data('deltaX', ev.deltaX).trigger('panned')
     if (options.onPanned) options.onPanned();
-    fixup();
   }
 
   function fixupIfNeeded() {
