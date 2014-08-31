@@ -159,7 +159,8 @@ function initSlider(viewport, options) {
     if (current.right[0] && current.right[0].coverage * 2 >= $(current.right[0].elt).outerWidth()) {
       return switchItem(viewport, options, current.right[0].index);
     }
-    if (current.left[0]) switchItem(viewport, options, current.left[0].index);
+    if (current.left[0]) return switchItem(viewport, options, current.left[0].index);
+    if (current.right[0]) return switchItem(viewport, options, current.right[0].index);
   }
 }
 
