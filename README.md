@@ -51,7 +51,8 @@ Or, you can use the version which rolls up [HammerJS](http://hammerjs.github.io/
 </div>
 ```
 
-<em>Example #1</em>: Barebones with no styles loaded and no bullets
+<em>Example #1</em>: Barebones with no styles loaded and no bullets.   See <a href="//like-falling-leaves.github.io/ezslider/example3.html">demo</a>.
+
 
 ```javascript
    $(function () {
@@ -62,7 +63,7 @@ Or, you can use the version which rolls up [HammerJS](http://hammerjs.github.io/
    });
 ```
 
-<em>Example #2</em>: Bare-bones slider but use default styles
+<em>Example #2</em>: Bare-bones slider but use default styles.   See <a href="//like-falling-leaves.github.io/ezslider/example2.html">demo</a>.
 
 ```javascriopt
    $(function () {
@@ -72,7 +73,7 @@ Or, you can use the version which rolls up [HammerJS](http://hammerjs.github.io/
    });
 ```
 
-<em>Example #3</em>: Slider with bullets but not styles
+<em>Example #3</em>: Slider with bullets but not styles.  See <a href="//like-falling-leaves.github.io/ezslider/example3.html">demo</a>.
 
 ```javascriopt
    $(function () {
@@ -83,7 +84,7 @@ Or, you can use the version which rolls up [HammerJS](http://hammerjs.github.io/
    });
 ```
 
-<em>Example #4</em>: Slider with bullets and default styles
+<em>Example #4</em>: Slider with bullets and default styles.   See <a href="//like-falling-leaves.github.io/ezslider/example3.html">demo</a>.
 
 ```javascriopt
    $(function () {
