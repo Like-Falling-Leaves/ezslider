@@ -1,0 +1,23 @@
+{
+  "name": "ezslider",
+  "description": "Very simple jQuery plugin for slideshows that work great on mobile",
+  "keywords": ["mobile", "slideshow"],
+  "homepage": "https://github.com/likefallingleaves/ezslider",
+  "bugs": { "url": "https://github.com/likefallingleaves/ezslider/issues" },
+  "license": "MIT",
+  "author": {"name": "Like FallingLeaves", "email": "likefallingleaves@gmail.com"},
+  "main": "./index.js",
+  "maintainers": [{"name": "Like FallingLeaves", "email": "likefallingleaves@gmail.com"}],
+  "version": "0.0.1",
+  "repository": { "type": "git", "url": "git://github.com/likefallingleaves/ezslider.git" },
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "hammerjs": "2.0.2",
+    "ezstyles": "0.0.2" 
+  },
+  "devDependencies": {
+    "browserify": "5.x",
+    "uglifyjs": "2.x",
+    "jade": "1.x"
+  }
+}

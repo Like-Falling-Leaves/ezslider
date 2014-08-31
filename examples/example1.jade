@@ -1,0 +1,21 @@
+doctype html
+head
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible", content="IE=edge")
+  title EZ Slider Test Page
+  script(src="//code.jquery.com/jquery-1.11.1.min.js")
+  script(src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.all.js")
+body.vote
+  h2 test
+  div.slider
+    div.item
+      p This is the first slider item.  It has a very long sentence that will hopefully wrap around a bit.
+      p Second paragraph
+    div.item
+      p This is the second slider item.  It has a very long sentence that will hopefully wrap around a bit.
+      p Second paragraph #2
+    div.item
+      p This is the third  slider item.  It has a very long sentence that will hopefully wrap around a bit.
+      p Second paragraph #3
+  script(type='text/javascript')
+    | $(function () { $('.slider').slider({bullets: {}}); });
