@@ -1,0 +1,40 @@
+//
+// Basic Slider Styles
+//
+
+.slider {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.item {
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  width: 100%;
+}
+
+//
+// Bullet styles
+//
+
+.slider {
+  position: relative;
+}
+.bullets {
+  position: absolute;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  bottom: 10%; left: 0; width: 100%;
+  height: 20px; line-height: 20px;
+}
+.bullet {
+  color: lightgrey;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+.bullet.selected {
+  color: black;
+}
