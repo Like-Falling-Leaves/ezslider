@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ezslider by Like-Falling-Leaves</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ezslider</h1>
+        <p>A very simple slider library for slideshows iOS-style bullets on mobile devices.  No bells and whistles</p>
+
+        <p class="view"><a href="https://github.com/Like-Falling-Leaves/ezslider">View the Project on GitHub <small>Like-Falling-Leaves/ezslider</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/Like-Falling-Leaves/ezslider/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Like-Falling-Leaves/ezslider/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Like-Falling-Leaves/ezslider">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="ezslider" class="anchor" href="#ezslider"><span class="octicon octicon-link"></span></a>ezslider</h1>
+
+<p>A very simple jQuery plugin for slideshows iOS-style bullets on mobile devices.  No bells and whistles.</p>
+
+<h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<p>Node:</p>
+
+<pre><code>npm install ezslider
+</code></pre>
+
+<p>Browser:</p>
+
+<p>Since <em>ezslider</em> requires <a href="http://hammerjs.github.io/">HammerJS</a> and <a href="http://jquery.org">JQuery</a> to function, you can either include the dependencies yourself as follows:</p>
+
+<pre><code>&lt;script src="//code.jquery.com/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="//hammerjs.github.io/dist/hammer.min.js"&gt;&lt;/script&gt;
+&lt;script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.css"&gt;&lt;/script&gt;
+&lt;script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.bullets.js"&gt;&lt;/script&gt;
+&lt;script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p>Or, you can use the version which rolls up <a href="http://hammerjs.github.io/">HammerJS</a>:</p>
+
+<pre><code>&lt;script src="//code.jquery.com/jquery-1.11.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.all.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<p> <em>Note #1<em> The first version (<em>ezslider.js</em>) above does not include the <em>bullets</em> plugin -- that should be included manually.  The second one (<em>ezslider.all.js</em>) rolls in the <em>bullet</em> plugin as well. </em></em></p>
+
+<p> <em>Note #2<em> The first version (<em>ezslider.js</em>) does not include styles required so you have to explicitly include the styles (see <em>ezslider.css</em> for sample styles).  The second one (<em>ezslider.all.js</em>) includes the styles by default though it can be disabled via options so you can still override them if you would like.
+
+## Usage
+
+<em>Examples</em>: All the examples use the following HTML
+
+```html
+<div>
+   <div>
+      <p>This is the first slider item.</p>
+
+<pre><code>  &lt;p&gt;Second Paragrah&lt;/p&gt;
+</code></pre>
+
+<p></p>
+</div>
+   <div>
+      <p>This is the second slider item.</p>
+      <p>Second Paragrah</p>
+   </div>
+   <div>
+      <p>This is the third slider item.</p>
+   </div>
+</div></em></em></p>
+
+<pre><code>
+&lt;em&gt;Example #1&lt;/em&gt;: Barebones with no styles loaded and no bullets
+
+```javascript
+   $(function () {
+       $('.slider).slider({
+           noStyles: true,
+           bullets: false
+       });
+   });
+</code></pre>
+
+<p><em>Example #2</em>: Bare-bones slider but use default styles</p>
+
+<pre lang="javascriopt"><code>   $(function () {
+       $('.slider).slider({
+           bullets: false
+       });
+   });
+</code></pre>
+
+<p><em>Example #3</em>: Slider with bullets but not styles</p>
+
+<pre lang="javascriopt"><code>   $(function () {
+       $('.slider).slider({
+           noStyles: true,
+           bullets: {noStyles: true}
+       });
+   });
+</code></pre>
+
+<p><em>Example #3</em>: Slider with bullets and default styles</p>
+
+<pre lang="javascriopt"><code>   $(function () {
+       $('.slider).slider({});
+   });
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Like-Falling-Leaves">Like-Falling-Leaves</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
