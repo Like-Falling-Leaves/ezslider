@@ -75,11 +75,10 @@ function initSlider(viewport, options) {
   function fixupIfNeeded() {
     if (viewport.find(itemSel).first().is(':animated')) return;
     var current = getCurrentItem(viewport, options);
-    var deltaX = viewport.data('deltaX');
-    if (deltaX === 0 || isNaN(parseInt(deltaX))) return;
-    var index = (current.left[0] || current.right[0]).index;
-    if (deltaX < 0) index = (current.right[0] || current.left[0]).index;
-    switchItem(viewport, options, index);
+    if (current.right[0] && current.right[0].coverage * 2 >= $(current.right[0].elt).outerWidth()) {
+      return switchItem(viewport, options, current.right[0].index);
+    }
+    if (current.left[0]) switchItem(viewport, options, current.left[0].index);
   }
 }
 
