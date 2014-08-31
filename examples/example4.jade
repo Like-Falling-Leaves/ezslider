@@ -4,10 +4,7 @@ head
   meta(http-equiv="X-UA-Compatible", content="IE=edge")
   title EZ Slider Test Page
   script(src="//code.jquery.com/jquery-1.11.1.min.js")
-  script(src="//hammerjs.github.io/dist/hammer.min.js")
-  link(href="//like-falling-leaves.github.io/ezslider/ezslider.css")
-  script(src="//like-falling-leaves.github.io/ezStyles/ezStyles.js")
-  script(src="//like-falling-leaves.github.io/ezslider/ezslider.js")
+  script(src="//like-falling-leaves.github.io/ezslider/ezslider.all.js")
 body.vote
   h2 test
   div.slider
@@ -21,4 +18,4 @@ body.vote
       p This is the third  slider item.  It has a very long sentence that will hopefully wrap around a bit.
       p Second paragraph #3
   script(type='text/javascript')
-    | $(function () { $('.slider').ezslider({noStyles: true, bullets: false}); });
+    | $(function () { $('.slider').ezslider({bullets: {}}); });

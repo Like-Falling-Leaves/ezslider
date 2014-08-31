@@ -6,8 +6,8 @@ module.exports = {
 };
 
 function addDefaultStyles() {
-  return styles.create({
-    id: 'slider-styles',
+  return ezStyles.create({
+    id: 'ezslider-styles',
     styles: [
       ['.slider', 'overflow: hidden; white-space: nowrap; position: relative;'],
       ['.item', 'display: inline-block; width: 100%; vertical-align: top; white-space: normal;']
@@ -18,15 +18,15 @@ function addDefaultStyles() {
 var $ = window.jQuery || window.$;
 function addPlugin() {
   $(function () {
-    $.fn.slider = function (options) {
+    $.fn.ezslider = function (options) {
       var ret = this;
       var args = arguments;
       this.each(function () {
-        var data = $(this).data('slider');
+        var data = $(this).data('ezslider');
         if (data) ret = processCommand($(this), data.options, args);
-        else if (typeof (options) == 'string') throw new Error('slider not initialized');
+        else if (typeof (options) == 'string') throw new Error('ezslider not initialized');
         else {
-          $(this).data('slider', {viewport: $(this), options: options});
+          $(this).data('ezslider', {viewport: $(this), options: options});
           initSlider($(this), options);
         }
       });
@@ -37,7 +37,7 @@ function addPlugin() {
   function processCommand(viewport, options, args) {
     if (args[0] == 'set') return switchItem(viewport, options, args[1]);
     else if (args[0] == 'get') return getCurrentItem(viewport, options);
-    else throw new Error('Unknown command to slider: ' + args[0]);
+    else throw new Error('Unknown command to ezslider: ' + args[0]);
   }
 }
 
@@ -68,7 +68,7 @@ function initSlider(viewport, options) {
     .on('panend', fixupIfNeeded);
   viewport.on('switch-to-item', function (ev, data) { switchToItem(viewport, options, data); });
 
-  if (options.bullets && viewport.sliderBullets) viewport.sliderBullets(options.bullets);
+  if (options.bullets && viewport.ezsliderBullets) viewport.ezsliderBullets(options.bullets);
   function swipe(ev) {
     if (viewport.find(itemSel).first().is(':animated')) return;
     var current = getCurrentItem(viewport, options);

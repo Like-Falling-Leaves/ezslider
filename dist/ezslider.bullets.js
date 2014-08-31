@@ -10,7 +10,7 @@ function addDefaultStyles() {
     styles: [
       ['.bullet', 'color: lightgrey; font-size: 20px; padding: 5px; cursor: pointer;'],
       ['.bullet.selected', 'color: black'],
-      ['.bullets', 'position: absolute; bottom: 10%; left: 0; height: 20px; line-height: 20x;'],
+      ['.bullets', 'position: absolute; bottom: 10%; left: 0; height: 20px; line-height: 20px;'],
       ['.bullets', 'width: 100%; overflow: hidden; white-space: nowrap; text-align: center;']
     ]
   });

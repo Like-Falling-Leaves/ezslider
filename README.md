@@ -16,14 +16,16 @@ Since <em>ezslider</em> requires [HammerJS](http://hammerjs.github.io/) and [JQu
 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//hammerjs.github.io/dist/hammer.min.js"></script>
-    <script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.css"></script>
-    <script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.bullets.js"></script>
-    <script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.js"></script>
+    <script src="//like-falling-leaves.github.io/ezStyles/ezStyles.js">
+    <script src="//like-falling-leaves.github.io/ezslider/ezslider.bullets.js">
+    <script src="//like-falling-leaves.github.io/ezslider/ezslider.js">
+    <link href="//like-falling-leaves.github.io/ezslider/ezslider.css">
+
 
 Or, you can use the version which rolls up [HammerJS](http://hammerjs.github.io/):
 
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="//raw.githubusercontent.com/Like-Falling-Leaves/ezslider/master/dist/ezslider.all.js"></script>
+    <script src="//like-falling-leaves.github.io/ezslider/ezslider.all.js">
 
 <p style="border: 1px solid red"> <em>Note #1<em> The first version (<em>ezslider.js</em>) above does not include the <em>bullets</em> plugin -- that should be included manually.  The second one (<em>ezslider.all.js</em>) rolls in the <em>bullet</em> plugin as well. </p>
 
@@ -81,7 +83,7 @@ Or, you can use the version which rolls up [HammerJS](http://hammerjs.github.io/
    });
 ```
 
-<em>Example #3</em>: Slider with bullets and default styles
+<em>Example #4</em>: Slider with bullets and default styles
 
 ```javascriopt
    $(function () {
