@@ -51,7 +51,7 @@ Or, you can use the version which rolls up [HammerJS](http://hammerjs.github.io/
 </div>
 ```
 
-<em>Example #1</em>: Barebones with no styles loaded and no bullets.   See <a href="//like-falling-leaves.github.io/ezslider/example3.html">demo</a>.
+<em>Example #1</em>: Barebones with no styles loaded and no bullets.   See <a href="//like-falling-leaves.github.io/ezslider/example1.html">demo</a>.
 
 
 ```javascript
