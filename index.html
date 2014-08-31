@@ -26,10 +26,6 @@
           <li><a href="https://github.com/Like-Falling-Leaves/ezslider/tarball/master">Download <strong>TAR Ball</strong></a></li>
           <li><a href="https://github.com/Like-Falling-Leaves/ezslider">View On <strong>GitHub</strong></a></li>
         </ul>
-
-        <ul>
-          <li><a href="//like-falling-leaves.github.io/ezslider/ezslider.all.min.js">Download compressed <strong>ezslider.js</strong></a></li>
-        </ul>
       </header>
       <section>
         <h1>
@@ -65,45 +61,39 @@
 
 <p> <em>Note #1<em> The first version (<em>ezslider.js</em>) above does not include the <em>bullets</em> plugin -- that should be included manually.  The second one (<em>ezslider.all.js</em>) rolls in the <em>bullet</em> plugin as well. </em></em></p>
 
-<p> <em>Note #2<em> The first version (<em>ezslider.js</em>) does not include styles required so you have to explicitly include the styles (see <em>ezslider.css</em> for sample styles).  The second one (<em>ezslider.all.js</em>) includes the styles by default though it can be disabled via options so you can still override them if you would like.
+<p> <em>Note #2<em> The first version (<em>ezslider.js</em>) does not include styles required so you have to explicitly include the styles (see <em>ezslider.css</em> for sample styles).  The second one (<em>ezslider.all.js</em>) includes the styles by default though it can be disabled via options so you can still override them if you would like. </em></em></p>
 
-## Usage
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<em>Examples</em>: All the examples use the following HTML
+<p><em>Examples</em>: All the examples use the following HTML</p>
 
-```html
-<div>
-   <div>
-      <p>This is the first slider item.</p>
+<div class="highlight highlight-html"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"slider"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>This is the first slider item.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Second Paragrah<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>This is the second slider item.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;p&gt;</span>Second Paragrah<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;p&gt;</span>This is the third slider item.<span class="nt">&lt;/p&gt;</span>
+   <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
 
-<pre><code>  &lt;p&gt;Second Paragrah&lt;/p&gt;
-</code></pre>
+<p><em>Example #1</em>: Barebones with no styles loaded and no bullets.   See <a href="//like-falling-leaves.github.io/ezslider/example3.html">demo</a>.</p>
 
-<p></p>
-</div>
-   <div>
-      <p>This is the second slider item.</p>
-      <p>Second Paragrah</p>
-   </div>
-   <div>
-      <p>This is the third slider item.</p>
-   </div>
-</div></em></em></p>
+<div class="highlight highlight-javascript"><pre>   <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+       <span class="nx">$</span><span class="p">(</span><span class="err">'</span><span class="p">.</span><span class="nx">slider</span><span class="p">).</span><span class="nx">slider</span><span class="p">({</span>
+           <span class="nx">noStyles</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+           <span class="nx">bullets</span><span class="o">:</span> <span class="kc">false</span>
+       <span class="p">});</span>
+   <span class="p">});</span>
+</pre></div>
 
-<pre><code>
-
-<p><em>Example #1</em>: Barebones with no styles loaded and no bullets.  See <a href="example1.html">demo</a>.</p>
-
-```javascript
-   $(function () {
-       $('.slider).slider({
-           noStyles: true,
-           bullets: false
-       });
-   });
-</code></pre>
-
-<p><em>Example #2</em>: Bare-bones slider but use default styles. See <a href="example2.html">demo</a>.</p>
+<p><em>Example #2</em>: Bare-bones slider but use default styles.   See <a href="//like-falling-leaves.github.io/ezslider/example2.html">demo</a>.</p>
 
 <pre lang="javascriopt"><code>   $(function () {
        $('.slider).slider({
@@ -112,7 +102,7 @@
    });
 </code></pre>
 
-<p><em>Example #3</em>: Slider with bullets but not styles.  See <a href="example3.html">demo</a>.</p>
+<p><em>Example #3</em>: Slider with bullets but not styles.  See <a href="//like-falling-leaves.github.io/ezslider/example3.html">demo</a>.</p>
 
 <pre lang="javascriopt"><code>   $(function () {
        $('.slider).slider({
@@ -122,7 +112,7 @@
    });
 </code></pre>
 
-<p><em>Example #4</em>: Slider with bullets and default styles.  See <a href="example4.html">demo</a>.</p>
+<p><em>Example #4</em>: Slider with bullets and default styles.   See <a href="//like-falling-leaves.github.io/ezslider/example3.html">demo</a>.</p>
 
 <pre lang="javascriopt"><code>   $(function () {
        $('.slider).slider({});
