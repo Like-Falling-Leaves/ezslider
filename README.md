@@ -29,7 +29,7 @@ Or, you can use the version which rolls up [HammerJS](http://hammerjs.github.io/
 
 <p style="border: 1px solid red"> <em>Note #1<em> The first version (<em>ezslider.js</em>) above does not include the <em>bullets</em> plugin -- that should be included manually.  The second one (<em>ezslider.all.js</em>) rolls in the <em>bullet</em> plugin as well. </p>
 
-<p style="border: 1px solid red"> <em>Note #2<em> The first version (<em>ezslider.js</em>) does not include styles required so you have to explicitly include the styles (see <em>ezslider.css</em> for sample styles).  The second one (<em>ezslider.all.js</em>) includes the styles by default though it can be disabled via options so you can still override them if you would like.
+<p style="border: 1px solid red"> <em>Note #2<em> The first version (<em>ezslider.js</em>) does not include styles required so you have to explicitly include the styles (see <em>ezslider.css</em> for sample styles).  The second one (<em>ezslider.all.js</em>) includes the styles by default though it can be disabled via options so you can still override them if you would like. </p>
 
 ## Usage
 
