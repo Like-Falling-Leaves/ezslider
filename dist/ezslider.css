@@ -1,7 +1,4 @@
-//
-// Basic Slider Styles
-//
-
+/* Basic Slider Styles */
 .slider {
   overflow: hidden;
   white-space: nowrap;
@@ -14,10 +11,7 @@
   width: 100%;
 }
 
-//
-// Bullet styles
-//
-
+/* Bullet styles */
 .slider {
   position: relative;
 }
