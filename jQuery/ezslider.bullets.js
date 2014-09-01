@@ -7,10 +7,10 @@ function addDefaultStyles() {
   return ezStyles.create({
     id: 'slider-bullets-styles',
     styles: [
-      ['.bullet', 'color: lightgrey; font-size: 20px; padding: 5px; cursor: pointer;'],
-      ['.bullet.selected', 'color: black'],
-      ['.bullets', 'position: absolute; bottom: 10%; left: 0; height: 20px; line-height: 20px;'],
-      ['.bullets', 'width: 100%; overflow: hidden; white-space: nowrap; text-align: center;']
+      ['.bullet:before, .bullet::before', 'content: "◦";  padding: 5px; cursor: pointer;'],
+      ['.bullet.selected:before, .bullet.selected::before', 'content: "•";'],
+      ['.bullets', 'position: absolute; bottom: 10%; left: 0; height: 20px; line-height: 20px; font-size: 20px; '],
+      ['.bullets', 'width: 100%; overflow: hidden; white-space: nowrap; text-align: center; color: black;']
     ]
   });
 }
@@ -53,7 +53,7 @@ function addBullets(viewport, options) {
 
   function getBullet(index) {
     if (!$(this).is(':visible')) return;
-    return $('<span>', {'class': 'bullet', text: '•', 'data-index': index.toString()}); 
+    return $('<span>', {'class': 'bullet', text: '', 'data-index': index.toString()}); 
   }
 
   function onClick(ee) {
