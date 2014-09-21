@@ -10,6 +10,8 @@ function addDefaultStyles() {
     styles: [
       ['.bullet:before, .bullet::before', 'content: "◦";  padding: 5px; cursor: pointer;'],
       ['.bullet.selected:before, .bullet.selected::before', 'content: "•";'],
+      ['.bullet.selected', 'font-size: 30px;'],
+      ['.bullet', 'vertical-align: middle;'],
       ['.bullets', 'position: absolute; bottom: 10%; left: 0; height: 20px; line-height: 20px; font-size: 20px; '],
       ['.bullets', 'width: 100%; overflow: hidden; white-space: nowrap; text-align: center; color: black;']
     ]
