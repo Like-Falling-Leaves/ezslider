@@ -156,7 +156,7 @@ function initSlider(viewport, options) {
   function fixupIfNeeded() {
     if (viewport.find(itemSel).first().is(':animated')) return;
     var current = getCurrentItem(viewport, options);
-    if (current.right[0] && current.right[0].coverage * 2 >= $(current.right[0].elt).outerWidth()) {
+    if (current.right[0] && current.right[0].coverage >= 50) {
       return switchItem(viewport, options, current.right[0].index);
     }
     if (current.left[0]) return switchItem(viewport, options, current.left[0].index);
