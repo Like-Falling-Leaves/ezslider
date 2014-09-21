@@ -84,7 +84,7 @@ Or, you can use the version which rolls up [HammerJS](http://hammerjs.github.io/
    });
 ```
 
-<em>Example #4</em>: Slider with bullets and default styles.   See <a href="http://like-falling-leaves.github.io/ezslider/example3.html">demo</a>.
+<em>Example #4</em>: Slider with bullets and default styles.   See <a href="http://like-falling-leaves.github.io/ezslider/example4.html">demo</a>.
 
 ```javascript
    $(function () {
